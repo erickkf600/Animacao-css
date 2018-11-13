@@ -1,0 +1,1 @@
+Animação de uma imagem png feita 100% com css puro 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ACCIO</title>
+</head>
+<style>
+    .animation{
+        font-size: 10em;
+        margin: 200px auto 0;
+        text-align: center;
+        font-family: sans-serif;
+        border: outset 2px #000;
+        position:relative;
+        overflow: hidden;
+        background: #ffc107;
+       }
+       .animation:before,
+        .animation:after {
+            content:'';
+            position:absolute;
+            top:-30%;
+            left:-100%;
+            background-image:url(seta.png);
+            background-repeat: no-repeat;
+            background-size: 100%; 
+            width:100%;
+            height:calc(100% + 100px);
+            animation:animate 5s linear infinite;
+        }
+
+@keyframes animate {
+    0% {left:-100%}
+    30%{left:-50%}
+    20%{left:-20%}
+    70%{left:10%}
+    90%{left:50%}
+    100%{left:100%}
+}
+@media only screen and (min-width:2000px){
+    .animation{font-size: 20em}
+}
+@media only screen and (min-width:1920px){
+    .animation{font-size: 15em}
+}
+/* @media only screen and (max-width: 420px){
+    .animation{
+        color: #fff
+    }
+}*/
+</style>
+<body>
+<h1 class="animation">ACCIO</h1>
+</body>
+</html>
